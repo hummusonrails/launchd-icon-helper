@@ -142,7 +142,7 @@ const getAgentDetail = async (label, domain) => {
   return {
     label: config.Label,
     domain,
-    program: config.Program || "",
+    program: extractProgram(config),
     args: config.ProgramArguments || [],
     runAtLoad: !!config.RunAtLoad,
     keepAlive: !!config.KeepAlive,
