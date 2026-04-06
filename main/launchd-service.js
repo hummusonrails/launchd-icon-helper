@@ -65,11 +65,14 @@ const describeSchedule = (config) => {
 };
 
 // turn a reverse-dns label into a friendly name
+// turn a reverse-dns label into a friendly name, keeping the org/app prefix
 const makeDisplayName = (label) => {
   const parts = label.split(".");
   if (parts.length <= 2) return label;
-  const name = parts.slice(2).join(" ");
-  return name.charAt(0).toUpperCase() + name.slice(1);
+  const meaningful = parts.slice(1);
+  return meaningful
+    .map((p) => p.charAt(0).toUpperCase() + p.slice(1))
+    .join(" ");
 };
 
 // extract the program path from a plist config
