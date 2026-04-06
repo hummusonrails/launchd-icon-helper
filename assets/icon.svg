@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Body - round chubby shape -->
+  <ellipse cx="256" cy="280" rx="140" ry="150" fill="#6366f1"/>
+
+  <!-- Left horn -->
+  <polygon points="175,160 155,80 200,145" fill="#6366f1"/>
+  <!-- Right horn -->
+  <polygon points="337,160 357,80 312,145" fill="#6366f1"/>
+
+  <!-- Left ear bump -->
+  <circle cx="150" cy="175" r="30" fill="#6366f1"/>
+  <!-- Right ear bump -->
+  <circle cx="362" cy="175" r="30" fill="#6366f1"/>
+
+  <!-- Belly lighter patch -->
+  <ellipse cx="256" cy="310" rx="90" ry="100" fill="#818cf8"/>
+
+  <!-- Left eye white -->
+  <ellipse cx="215" cy="255" rx="32" ry="35" fill="#ffffff"/>
+  <!-- Right eye white -->
+  <ellipse cx="297" cy="255" rx="32" ry="35" fill="#ffffff"/>
+
+  <!-- Left pupil -->
+  <circle cx="220" cy="258" r="16" fill="#1e1b4b"/>
+  <!-- Right pupil -->
+  <circle cx="302" cy="258" r="16" fill="#1e1b4b"/>
+
+  <!-- Left eye shine -->
+  <circle cx="226" cy="250" r="6" fill="#ffffff"/>
+  <!-- Right eye shine -->
+  <circle cx="308" cy="250" r="6" fill="#ffffff"/>
+
+  <!-- Smile -->
+  <path d="M225,310 Q256,345 287,310" stroke="#1e1b4b" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Little fangs -->
+  <polygon points="237,312 233,325 241,312" fill="#ffffff"/>
+  <polygon points="275,312 279,325 271,312" fill="#ffffff"/>
+
+  <!-- Left arm/hand -->
+  <ellipse cx="130" cy="320" rx="28" ry="22" fill="#6366f1"/>
+  <!-- Right arm/hand -->
+  <ellipse cx="382" cy="320" rx="28" ry="22" fill="#6366f1"/>
+
+  <!-- Left foot -->
+  <ellipse cx="205" cy="425" rx="35" ry="18" fill="#4f46e5"/>
+  <!-- Right foot -->
+  <ellipse cx="307" cy="425" rx="35" ry="18" fill="#4f46e5"/>
+
+  <!-- Tail -->
+  <path d="M380,380 Q420,370 430,340 Q440,310 460,305 L465,295 Q445,300 435,325 Q425,350 390,370" fill="#6366f1"/>
+  <!-- Tail point -->
+  <path d="M460,305 L475,290 L465,295 L460,305Z" fill="#4f46e5"/>
+</svg>
