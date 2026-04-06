@@ -100,6 +100,11 @@ export default function App() {
           )
         ))}
       </div>
+      <div className="app-footer">
+        <button className="btn-quit" onClick={() => window.launchd.quit()}>
+          Quit Launchd Helper
+        </button>
+      </div>
       {showAddNew && (
         <AddNew
           onSave={handleSave}

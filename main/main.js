@@ -30,8 +30,11 @@ const createWindow = () => {
   });
 };
 
-// wire up ipc handlers that delegate to launchd service
+// wire up ipc handlers
 const registerIpcHandlers = () => {
+  ipcMain.handle("quit-app", () => app.quit());
+
+
   ipcMain.handle("get-agents", async () => {
     try {
       return await launchd.getAllAgents();

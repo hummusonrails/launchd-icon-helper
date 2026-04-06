@@ -622,3 +622,29 @@ html, body {
 .modal-actions .btn {
   flex: 1;
 }
+
+/* footer with quit button */
+.app-footer {
+  padding: 8px 12px;
+  border-top: 1px solid var(--border);
+  background: var(--card);
+  flex-shrink: 0;
+}
+
+.btn-quit {
+  width: 100%;
+  padding: 6px 0;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-muted);
+  font-family: var(--font);
+  font-size: 11px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-quit:hover {
+  background: var(--border);
+  color: var(--text);
+}

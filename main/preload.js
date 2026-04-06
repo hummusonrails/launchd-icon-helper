@@ -19,4 +19,7 @@ contextBridge.exposeInMainWorld("launchd", {
   // read full detail for one agent
   getAgentDetail: (label, domain) =>
     ipcRenderer.invoke("get-agent-detail", label, domain),
+
+  // quit the app
+  quit: () => ipcRenderer.invoke("quit-app"),
 });
