@@ -1,5 +1,5 @@
 // tray icon setup and window positioning
-const { Tray } = require("electron");
+const { Tray, Menu, app } = require("electron");
 const path = require("path");
 
 let tray = null;
@@ -9,6 +9,12 @@ const createTray = (window) => {
   const iconPath = path.join(__dirname, "..", "assets", "tray-iconTemplate.png");
   tray = new Tray(iconPath);
   tray.setToolTip("Launchd Helper");
+
+  // right-click context menu with quit option
+  const contextMenu = Menu.buildFromTemplate([
+    { label: "Quit Launchd Helper", click: () => app.quit() },
+  ]);
+  tray.on("right-click", () => tray.popUpContextMenu(contextMenu));
 
   tray.on("click", () => {
     if (window.isVisible()) {
